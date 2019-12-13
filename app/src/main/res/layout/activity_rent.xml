@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/icons8_go_back_50"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="170dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="RENT A CAR"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/headline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Header"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="19dp"
+            android:text="CURRENT POSITION:"
+            android:textColor="#313131"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+        android:layout_below="@+id/headline_1"
+        android:drawableLeft="@drawable/ic_discover_black_24dp"
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:ems="17"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Khu công nghệ cao, Q9, HCM"
+        android:textAlignment="center"
+        android:textStyle="italic"/>
+
+    <Button
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnFind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="FIND A CAR"
+        android:textSize="20dp"
+        android:textColor="@color/cardview_light_background"
+        android:background="@drawable/login_button_custom" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_below="@+id/btnFind"
+            android:layout_marginTop="20dp"
+            android:background="#DDDDDD" />
+
+    <FrameLayout
+        android:layout_margin="20dp"
+        android:layout_below="@+id/line"
+        android:layout_width="380dp"
+        android:layout_height="370dp"
+        android:id="@+id/map_container">
+    </FrameLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_below="@+id/map_container"
+            android:layout_marginTop="20dp"
+            android:background="#DDDDDD" />
+
+        <FrameLayout
+
+            android:id="@+id/car_container"
+            android:layout_width="500dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="20dp"></FrameLayout>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/car_container"
+            android:layout_marginTop="20dp"
+            android:background="#DDDDDD" />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

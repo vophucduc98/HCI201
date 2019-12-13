@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@android:color/background_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_below="@+id/Header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/car_1" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="FORD FOCUS 2019"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="#fa4252"
+                android:rating="5"
+                android:stepSize="2.0" />
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tag"
+                android:gravity="center"
+                android:text="Automatic"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="900K"
+                android:textColor="#fa4252"
+                android:textSize="35dp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/price"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="No insurance supported"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center"
+                android:drawableLeft="@drawable/shield"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_below="@+id/insurance"
+                android:layout_marginTop="20dp"
+                android:background="#DDDDDD" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="DURATION"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text=" 21h:00 Monday, 10/12/2019\n 21h:00 Friday, 14/12/2019"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/clock"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView4"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="CHANGE"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#fa4252"
+                android:textSize="15dp" />
+            <View
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/time"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="LOCATION TO RECEIVE"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text=" Q9, TPHCM, VN\n Detail will show after deposit"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/location"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/location2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Deliver not supported"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/line5"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_below="@+id/location2"
+                android:layout_marginTop="20dp"
+                android:background="#DDDDDD" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="PRICE DETAIL"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Price"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/detailprice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="900.000đ/day"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/detailprice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailprice1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Service charge"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/detailprice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailprice1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="50.000đ/day"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/line6"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/detailprice3"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/detailprice4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Total"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailprice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line6"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="950.000đ/day"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/line7"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_below="@+id/detailprice5"
+                android:layout_marginTop="20dp"
+                android:background="#DDDDDD" />
+
+
+            <TextView
+                android:id="@+id/rentalpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="RENTAL PAPERS"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rentalpaper2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rentalpaper"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text=" - Identity card"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/rentalpaper3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rentalpaper2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text=" - Household card"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/line8"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rentalpaper3"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/deposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="DEPOSIT"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deposit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deposit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="15.000.000đ or Motorbike has price equal 15.000.000đ"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/line9"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_below="@+id/deposit1"
+                android:layout_marginTop="20dp"
+                android:background="#DDDDDD" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="OWNER INFO"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="John Doe"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/rhino"
+                android:layout_below="@+id/info"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp">
+
+            </ImageView>
+
+            <RatingBar
+                android:id="@+id/info2"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="#fa4252"
+                android:rating="4"
+                android:stepSize="2.0" />
+
+            <View
+                android:id="@+id/line10"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/avatar"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line10"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Response ratio"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/info4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line10"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="100%"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/line11"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/info4"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/info5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line11"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Response time"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/info6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line11"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="1 hour"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/line12"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/info6"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/info7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line12"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Agree ratio"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_vertical"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/info8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line12"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="80%"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/line13"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_below="@+id/info8"
+                android:layout_marginTop="20dp"
+                android:background="#DDDDDD" />
+
+            <Button
+                android:id="@+id/btnRent"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/line13"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login_button_custom"
+                android:text="Rent"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnRent1"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/btnRent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/report_button"
+                android:text="Report"
+                android:textColor="#fa4252"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/line14"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_below="@+id/btnRent1"
+                android:layout_marginTop="20dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/icons8_go_back_50"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="170dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="RENT A CAR"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </RelativeLayout>
+</RelativeLayout>

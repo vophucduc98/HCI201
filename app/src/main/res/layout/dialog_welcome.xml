@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/welcome_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_3" />
+
+    <RelativeLayout
+        android:id="@+id/welcome_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_img"
+        android:layout_marginTop="20dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/welcome_content1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to join the "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/welcome_content1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/welcome_content1_1"
+            android:text="Urent"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/welcome_content1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/welcome_content1_2"
+            android:text=" community!"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/welcome_content1_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_content1_3"
+            android:layout_marginTop="20dp"
+            android:text="Invite you to take a look at the useful experience and instructions for renting a car on Urent."
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/welcome_content1_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_content1_4"
+            android:layout_marginTop="20dp"
+            android:text="Hope you will have a great experience with us."
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/welcome_content1_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_content1_5"
+            android:layout_marginTop="10dp"
+            android:text="Urent team"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/close_welcome"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/welcome_content1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_confirm"
+        android:text="START"
+        android:textColor="@android:color/background_light" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_below="@+id/close_welcome"
+        android:layout_height="30dp" />
+</RelativeLayout>
